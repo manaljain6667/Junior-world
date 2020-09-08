@@ -1,0 +1,23 @@
+create database juniordbms;
+use juniordbms;
+
+create table login
+(
+    username varchar(50),
+    password varchar(50),
+    address varchar(50),
+    city varchar(50),
+    mobile varchar(50),
+    email varchar(50),
+    babyage varchar(50),
+    babygender varchar(50)
+);
+CREATE TABLE boynames
+(
+    Name CHAR(200),Meaning CHAR(200),Religion CHAR(100)
+);
+CREATE TABLE girlnames
+(
+    Name CHAR(200),Meaning CHAR(200),Religion CHAR(100)
+);
+ SELECT * FROM login INTO OUTFILE '/tmp/tutorials.txt';
